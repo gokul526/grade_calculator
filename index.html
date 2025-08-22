@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <script>
+
+// Get marks for 5 subjects
+let sub1 = parseInt(prompt("Enter marks for Subject 1:"));
+let sub2 = parseInt(prompt("Enter marks for Subject 2:"));
+let sub3 = parseInt(prompt("Enter marks for Subject 3:"));
+let sub4 = parseInt(prompt("Enter marks for Subject 4:"));
+let sub5 = parseInt(prompt("Enter marks for Subject 5:"));
+
+// Total and Average
+let total = sub1 + sub2 + sub3 + sub4 + sub5;
+let average = total / 5;
+
+// Grade calculation
+let grade;
+
+if (average >= 90) {
+  grade = "A+";
+} else if (average >= 80) {
+  grade = "A";
+} else if (average >= 70) {
+  grade = "B";
+} else if (average >= 60) {
+  grade = "C";
+} else if (average >= 50) {
+  grade = "D";
+} else {
+  grade = "F";
+  
+}
+
+// Display results
+alert("Total Marks: "+ total +"Average: " + average +"Grade: " + grade);
+
+
+    </script>
+</body>
+</html>
